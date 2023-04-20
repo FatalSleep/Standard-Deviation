@@ -5,8 +5,8 @@ This is useful if for example you wanted to find the average value between some 
 
 How to find the standard deviation:
 ```
-// Define your variables:
-Mean, SqrdSum, Variance, Deviation, Deviated, DataSize, DataSet, DataDeviation;
+// Define your variables: Where DataSet is a list of data points/values and everything is initialized to 0 (default).
+DataSet, DataSize, Mean, SqrdSum, Variance, Deviation;
 
 // Add up DataSet and the square of the DataSet:
 loop(auto data in DataSet):
