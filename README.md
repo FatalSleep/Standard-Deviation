@@ -5,7 +5,7 @@ This is useful if for example you wanted to find the average value between some 
 
 How to find the standard deviation:
 ```
-// Where DataSet is a list of data points/values.
+// Where DataSet is a list of data points/values, DataCount is the size of DataSet.
 // Everything else is initialized to 0 (default).
 variables: DataSet, DataSize, Mean, SqrdSum, Variance, Deviation
 
