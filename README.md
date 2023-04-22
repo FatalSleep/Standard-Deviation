@@ -21,4 +21,4 @@ Deviation = sqrt(Variance)
 ```
 The `Mean` is just the average of the data set. The `Variance` expresses how clustered or dispered the dataset is from the mean (higher variance higher dispursion, lower variance, lower dispersion). The `Deviation` is the average distance of all data points away from the mean.
 
-When calculating the Standard `Deviation` or `Variance` you get a formula of `SquaredSum / DataSize - sqr(Mean)`. However, the `DataSize` also denoted as `N` can change basedon the type of measurement to adjust for bias--this is Bessel's Correction. See the following for more information: https://www.uio.no/studier/emner/matnat/math/MAT4010/data/forelesningsnotater/bessel-s-correction---wikipedia.pdf
+When calculating the Standard `Deviation` or `Variance` you get a formula of `SquaredSum / DataSize - sqr(Mean)`. However, the `DataSize` also denoted as `N` can change to `N  -1` based on the type of measurement (population vs sample) to adjust for bias--this is Bessel's Correction. See the following for more information: https://www.uio.no/studier/emner/matnat/math/MAT4010/data/forelesningsnotater/bessel-s-correction---wikipedia.pdf
