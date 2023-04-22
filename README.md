@@ -7,16 +7,16 @@ How to find the standard deviation:
 ```
 // Where DataSet is a list of data points/values.
 // Everything else is initialized to 0 (default).
-DataSet, DataSize, Mean, SqrdSum, Variance, Deviation;
+variables: DataSet, DataSize, Mean, SqrdSum, Variance, Deviation
 
 // Add up DataSet and the square of the DataSet:
-loop(auto data in DataSet):
+loop(for each `data` in DataSet):
     Mean += data
     SqrdSum += sqr(data)
 
 // Calculate the Mean, Variance and Deviation:
 Mean  = Mean / DataSize
-Variance = SqrdSum / DataSize - sqr(Mean)
+Variance = (SqrdSum / DataSize) - sqr(Mean)
 Deviation = sqrt(Variance)
 ```
 The `Mean` is just the average of the data set. The `Variance` expresses how clustered or dispered the dataset is from the mean (higher variance higher dispursion, lower variance, lower dispersion). The `Deviation` is the average distance of all data points away from the mean.
