@@ -1,4 +1,4 @@
-# Standard-Deviation
+# Fast-Standard-Deviation
 In statistics the "standard deviation," is the average distance away from the mean. This is typically used to find the distribution of some dataset `K` away from the mean `M` where the range or distance from the mean per standard deviation varies by the density of the dataset.
 
 This is useful if for example you wanted to find the average value between some data points where the average isn't skewed by points far outside the mean. Or if you wanted to check the density of some population relative to a precise location.
@@ -22,3 +22,5 @@ Deviation = sqrt(Variance)
 The `Mean` is just the average of the data set. The `Variance` expresses how clustered or dispered the dataset is from the mean (higher variance higher dispursion, lower variance, lower dispersion). The `Deviation` is the average distance of all data points away from the mean.
 
 When calculating the Standard `Deviation` or `Variance` you get a formula of `SquaredSum / DataSize - sqr(Mean)`. However, the `DataSize` also denoted as `N` can change to `N  -1` based on the type of measurement (population vs sample) to adjust for bias--this is Bessel's Correction. See the following for more information: https://www.uio.no/studier/emner/matnat/math/MAT4010/data/forelesningsnotater/bessel-s-correction---wikipedia.pdf
+
+The article above notes that `Bessel's Correction` introduces a lower bias due to using `sqrt()` for calculating the Standard Deviation, by calculating the square of the mean in-post when determining the Variance this error is adjusted out when compared to traditional calculations for variance and standard deviation.
