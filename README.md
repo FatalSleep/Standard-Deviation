@@ -27,7 +27,7 @@ The article above notes that `Bessel's Correction` introduces a lower bias due t
 
 ----
 # Polar Coordinate Standard Deviation
-Unlike the above, I have no idea how this works. However it takes an input set of polar data (such as angles, hues, etc.) and finds the standard deviation then identifies outliers.
+Unlike the above, I have no idea how this math works. However it takes an input set of polar data (such as angles, hues, etc.) and finds the standard deviation then identifies outliers.
 ```C
 #include <stdio.h>
 #include <math.h>
